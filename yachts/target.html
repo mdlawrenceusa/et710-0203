@@ -1,17 +1,43 @@
 <!doctype html>
 <html>
-  <head>
-      <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet" />
 
-    <!-- Include the AngularJS library -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Yachts | Hatteras Yachts</title>
+
+
     <script src="js/vendor/angular.js"></script>
     <script src="js/vendor/angular-animaate.js"></script>
     <script src="js/vendor/angular-route.js"></script>
-  </head>
 
+    <!-- The font Awesome code below is several revisions back.
+          https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+           I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome -->
+
+          <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/subnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="css/main.css" rel="stylesheet" />
+
+
+  </head>
   <body ng-app="myApp">
+
+
     <div class="header">
       <div class="container">
         <h1>Book End</h1>
@@ -20,11 +46,14 @@
 
     <div class="main" ng-controller="MainController">
          <div class="container">
+           <div class="grid-x grid-padding-x">
 
            <h1>{{ title }}</h1>
            <h2>{{ promo }}</h2>
 
-           <div ng-repeat="product in products" class="col-md-6">
+
+
+           <div ng-repeat="product in products" class="large-4 cell">
      				<div class="thumbnail">
        				<img ng-src="{{ product.cover }}">
        				<p class="title">{{ product.name }}</p>
@@ -39,6 +68,8 @@
 
          </div>
        </div>
+     </div>
+
 
     <div class="footer">
       <div class="container">
