@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/record.css">
     <link rel="stylesheet" href="css/socials.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -55,13 +56,16 @@
 
            <div ng-repeat="product in products" class="large-4 cell">
      				<div class="thumbnail">
-       				<img ng-src="{{ product.cover }}">
-       				<p class="title">{{ product.name }}</p>
-   				    <p class="price">{{ product.price | currency }}</p>
-   				    <p class="date">{{ product.pubdate | date }}</p>
-              <div class="rating">
-               <p class="likes" ng-click="plusOne($index)">+ {{ product.likes }} </p>
-               <p class="dislikes" ng-click="minusOne($index)">- {{ product.dislikes }} </p>
+              <div class="image-hover-wrapper">
+    <span class="image-hover-wrapper-banner">Old Junky Bikes</span>
+    <a href="#"><img src="https://images.pexels.com/photos/163704/bike-old-wheel-two-wheeled-vehicle-163704.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+      <span class="image-hover-wrapper-reveal">
+        <p>Check it<br><i class="fa fa-link" aria-hidden="true"></i></p>
+      </span>
+    </a>
+  </div>
+
+
              </div>
      				</div>
    				</div>
