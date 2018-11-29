@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Yachts | Hatteras Yachts</title>
+
+
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/angular-animaate.js"></script>
+    <script src="js/vendor/angular-route.js"></script>
+
+    <!-- The font Awesome code below is several revisions back.
+          https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+           I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome -->
+
+          <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/subnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/rcard.css">
+
+
+    <link href="css/main.css" rel="stylesheet" />
+
+    <style>
+    .parallax {
+        /* The image used */
+        background-image: url("img/g001.png");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+  </head>
+
+
+  <body ng-app="myApp">
+
+
+
+
+
+    <div class="header">
+      <div class="container">
+        <h1>Book End</h1>
+      </div>
+    </div>
+
+
+    <div class="parallax"></div>
+
+
+
+
+
+
+
+
+
+    <div class="main" ng-controller="MainController">
+         <div class="container">
+           <div class="grid-x grid-padding-x">
+
+           <h1>{{ title }}</h1>
+           <h2>{{ promo }}</h2>
+
+
+
+           <div ng-repeat="product in products" class="large-4 cell">
+
+             <div class="card card-product-hover">
+               <img ng-src="{{ product.cover }}" alt="sweet foundation shirt" />
+               <div class="card-product-hover-icons">
+                 <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                 <a href="#"><i class="fa fa-star-o"></i></a>
+                 <a href="#"><i class="fa fa-share-alt"></i></a>
+
+                 <div class="rounded-social-buttons">
+                  <a class="social-button facebook" href="https://www.facebook.com/"></a>
+                  <a class="social-button twitter" href="https://twitter.com/"></a>
+                  <a class="social-button linkedin" href="https://www.linkedin.com/"></a>
+                  <a class="social-button youtube" href="https://www.youtube.com/"></a>
+                  <a class="social-button instagram" href="https://www.instagram.com/"></a>
+                  <a class="social-button pinterest" href="https://www.pinterest.com/"></a>
+                  <a class="social-button google-plus" href="https://plus.google.com/discover"></a>
+                  <a class="social-button github" href="https://github.com/"></a>
+                  <a class="social-button tumblr" href="https://www.tumblr.com/"></a>
+                </div>
+
+               </div>
+
+             </div>
+
+
+
+
+   				</div>
+
+         </div>
+       </div>
+     </div>
+
+
+    <div class="footer">
+      <div class="container">
+        <h2>Available for iPhone and Android.</h2>
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/app-store.png" width="120px" />
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/google-play.png" width="110px" />
+      </div>
+    </div>
+
+
+    <!-- Modules -->
+    <script src="js/app2.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+  </body>
+</html>
