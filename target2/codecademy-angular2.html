@@ -21,28 +21,18 @@
     <div class="main" ng-controller="MainController">
       <div class="container">
          <div class="card">
-          <img class="icon" ng-src="{{ move.icon }}">
-          <h2 class="title">{{ move.title }}</h2>
-          <p class="developer">{{ move.developer }}</p>
-          <p class="price">{{ move.price | currency }}</p>
+          <app-info info="move"></app-info>
         </div>
 
         <div class="card">
-          <img class="icon" ng-src="{{ shutterbugg.icon }}">
-          <h2 class="title">{{ shutterbugg.title }}</h2>
-          <p class="developer">{{ shutterbugg.developer }}</p>
-          <p class="price">{{ shutterbugg.price | currency }}</p>
+           <app-info info="shutterbugg"></app-info>
         </div>
 
         <div class="card">
-          <img class="icon" ng-src="{{ gameboard.icon }}">
-          <h2 class="title">{{ gameboard.title }}</h2>
-          <p class="developer">{{ gameboard.developer }}</p>
-          <p class="price">{{ gameboard.price | currency }}</p>
+           <app-info info="gameboard"></app-info>
         </div>
       </div>
     </div>
-
 
 
     <!-- Modules -->
@@ -50,6 +40,9 @@
 
     <!-- Controllers -->
     <script src="js/controllers/MainController.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/appInfo.js"></script>
 
   </body>
 </html>
