@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html ng-app class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vendor/angular.js"></script>
+
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/subnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- The font Awesome code below is several revisions back.
+    https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+     I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome -->
+
+    <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/social.css">
+
+
+  </head>
+  <body>
+<!-- *Begin Exprimental Area -->
+    <!-- *Begin Social Icons -->
+    <div class="rounded-social-buttons">
+  <a class="social-button facebook" href="https://www.facebook.com/"></a>
+  <a class="social-button twitter" href="https://twitter.com/"></a>
+  <a class="social-button linkedin" href="https://www.linkedin.com/"></a>
+  <a class="social-button youtube" href="https://www.youtube.com/"></a>
+  <a class="social-button instagram" href="https://www.instagram.com/"></a>
+  <a class="social-button pinterest" href="https://www.pinterest.com/"></a>
+  <a class="social-button google-plus" href="https://plus.google.com/discover"></a>
+  <a class="social-button github" href="https://github.com/"></a>
+  <a class="social-button tumblr" href="https://www.tumblr.com/"></a>
+</div>
+
+<i class="fas fa-stroopwafel"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == stroopwafel -->
+<i class="fas fa-stroopwafel"></i> <!-- using an <i> element to reference the icon -->
+<span class="fas fa-stroopwafel"></span> <!-- using a <span> element to reference the icon -->
+    <!-- *End Social Icons -->
+
+<!-- *Begin Product Card Equalizer  - In this sectoin we wil use a product card from the building blocks insde of the equalizer code from the kitchen sink.
+https://foundation.zurb.com/sites/docs/kitchen-sink.html#accordion -->
+
+    <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium" id="test-eq">
+      <div class="cell medium-4">
+        <div class="callout" data-equalizer-watch>
+
+
+<!-- *Begin Modal with Log In -->
+
+<div class="reveal" id="exampleModal1" data-reveal>
+  <!-- *Begin Social Log In -->
+  <div class="login-box">
+    <div class="row collapse expanded">
+      <div class="small-12 medium-6 column small-order-2 medium-order-1">
+        <div class="login-box-form-section">
+          <h1 class="login-box-title">Sign up</h1>
+          <input class="login-box-input" type="text" name="username" placeholder="Username" />
+          <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
+          <input class="login-box-input" type="password" name="password" placeholder="Password" />
+          <input class="login-box-input" type="password" name="password2" placeholder="Retype password" />
+          <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" />
+        </div>
+        <div class="or">OR</div>
+      </div>
+      <div class="small-12 medium-6 column small-order-1 medium-order-2 login-box-social-section">
+        <div class="login-box-social-section-inner">
+          <span class="login-box-social-headline">Sign in with<br />your social network</span>
+          <a class="login-box-social-button-facebook">Log in with facebook</a>
+          <a class="login-box-social-button-twitter">Log in with Twitter</a>
+          <a class="login-box-social-button-google">Log in with Google+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- *End Social Log In -->
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+<p><button class="button" data-open="exampleModal1">Click Here to Log In</button></p>
+<!-- *End Modal with Log In -->
+
+<!-- *End Exprimental Area -->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
