@@ -1,0 +1,13 @@
+.rotate,
+.rotateCounterwise {
+    -webkit-transition: 300ms ease all;
+    -moz-transition: 300ms ease all;
+    -o-transition: 300ms ease all;
+    transition: 300ms ease all;
+}
+.rotate {
+    -webkit-transform: rotate(90deg);
+}
+.rotateCounterwise {
+    -webkit-transform: rotate(0deg);
+}
