@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Yachts | Hatteras Yachts</title>
+
+
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/angular-animaate.js"></script>
+    <script src="js/vendor/angular-route.js"></script>
+
+    <!-- The font Awesome code below is several revisions back.
+          https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+           I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome -->
+
+          <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/subnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/record.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="css/main.css" rel="stylesheet" />
+
+
+  </head>
+  <body ng-app="myApp">
+
+
+    <div class="header">
+      <div class="container">
+        <h1>Book End</h1>
+      </div>
+    </div>
+
+    <div class="main" ng-controller="MainController">
+         <div class="container">
+           <div class="grid-x grid-padding-x">
+
+           <h1>{{ title }}</h1>
+           <h2>{{ promo }}</h2>
+
+
+
+           <div ng-repeat="product in products" class="large-4 cell">
+     				<div class="thumbnail">
+              <div class="image-hover-wrapper">
+    <span class="image-hover-wrapper-banner">Old Junky Bikes</span>
+    <a href="#"><img src="https://images.pexels.com/photos/163704/bike-old-wheel-two-wheeled-vehicle-163704.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+      <span class="image-hover-wrapper-reveal">
+        <p>Check it<br><i class="fa fa-link" aria-hidden="true"></i></p>
+      </span>
+    </a>
+  </div>
+
+
+             </div>
+     				</div>
+   				</div>
+
+         </div>
+       </div>
+     </div>
+
+
+    <div class="footer">
+      <div class="container">
+        <h2>Available for iPhone and Android.</h2>
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/app-store.png" width="120px" />
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/google-play.png" width="110px" />
+      </div>
+    </div>
+
+
+    <!-- Modules -->
+    <script src="js/app2.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+  </body>
+</html>
